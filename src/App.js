@@ -106,8 +106,13 @@ function App () {
       setTodos(newToDo);
       setCurrentEdit("");
   }
+  useEffect(() => {
+    localStorage.setItem("todolist", JSON.stringify(allTodos));
+  }, [allTodos]);
 
-
+  useEffect(() => {
+    localStorage.setItem("completedTodos", JSON.stringify(completedTodos));
+  }, [completedTodos]);
 
   return (
     <div className="App">
