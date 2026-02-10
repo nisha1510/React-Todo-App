@@ -3,6 +3,7 @@
 This project was bootstrapped with [Create React App].
 
 #feature 
+
 ✔ Add a new task with title and description  
 ✔ View all active tasks  
 ✔ Mark tasks as completed  
